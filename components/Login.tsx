@@ -14,9 +14,21 @@ const Login = () => {
       />
       <button
         onClick={() => signIn("google")}
-        className="text-white font-bold text-3xl animate-pulse"
+        className="text-white font-bold text-3xl animate-pulse button"
       >
         Sign In to use ChatGPT
+      </button>
+      <button
+        onClick={() => signIn("azure-ad")}
+        className="text-white font-bold text-3xl animate-pulse button"
+      >
+        Sign In with Azure AD
+      </button>
+      <button
+        onClick={() => signIn("github")}
+        className="text-white font-bold text-3xl animate-pulse button"
+      >
+        Sign In with Github
       </button>
     </div>
   );
